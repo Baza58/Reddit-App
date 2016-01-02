@@ -99,6 +99,7 @@ class App {
     	return txt.value;
 	}
 	showError(err) {
+		console.log(err);
 		this.hideSpinner();
 		this.errorBox.style.display = 'initial';
 		this.errorBox.textContent = `Something went wrong. Error message: ${err.message}`;
